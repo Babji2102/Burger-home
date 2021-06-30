@@ -14,6 +14,46 @@
   </head>
   <body>
       <!--nav bar-->
+    <style>
+      #nav{
+    position:fixed;
+    width: 250px;
+    height: 100%;
+    background: #000;
+    left: -250px;
+    transition: all .5s linear;
+}
+#nav.active{
+    left:0;
+}
+#nav ul li{
+    list-style-type: none;
+    color:#fff;
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: 1px solid orange;
+}
+
+#nav .toggle-btn{
+    position: absolute;
+    left: 260px;
+    top: 20px;
+}
+#nav .toggle-btn span{
+    display: block;
+    width: 45px;
+    height: 10px;
+    background: orange;
+    margin: 3px 0px;
+    cursor: pointer;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 10px;
+}
+i{
+    color: #fff;
+    margin: 12.5px;
+    cursor: pointer;
+}
       <nav class="navbar navbar-expand-lg fixed-top nav-menu">
         
         <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#navbar">
@@ -41,6 +81,7 @@
             </ul>
         </div>
     </nav>
+    </style>
        <!--Hero Section-->
       <section id="hero">
           <div class="hero-container">
